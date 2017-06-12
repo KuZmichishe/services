@@ -17,8 +17,13 @@
 // 'home/1' PUT
 // 'home' POST
 
-Route::resource('home', 'HomeController');
+Route::get('/', 'HomesController@index');
+//Route::get('/', 'HomeController@index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('home/{id}', 'HomeController@show');
+//Route::get('/', 'HomesController');
+
+
+//Route::get('home/show/{id}' function(Request $request){
+//	return $request;
+//});
